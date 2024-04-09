@@ -16,11 +16,7 @@ const tiles = L.tileLayer('https://api.mapbox.com/styles/v1/gdmckenzie/clu1okfsi
 
 // Custom marker icons
 
-var footballIcon = L.icon({
-    iconUrl: '//file/Usersc$/cch193/Home/Desktop/GIS403 LABS/Symbols/footballpin.png',
-    iconSize: [30,30],
-    iconAnchor: [20,40],
-    popupAnchor: [0, -40]   
+  
    
 });
 
@@ -50,7 +46,11 @@ var cabinIcon = L.icon({
 
 // There are four markers below.  Each has a latitude and longitude.  Edit these to be your unique places of interest.
 // Also note that each has its own 'pop-up.'  Edit the text in each of these to say why each location is important to you.
-const marker1 = L.marker([-40.335061228045625, 175.6276445697483], { icon: footballIcon }).addTo(map)
+
+const marker1 = L.marker([51.5, -0.09]).addTo(map)
+	.bindPopup('Hello! I am a popup.');
+
+const marker1 = L.marker([-40.335061228045625, 175.6276445697483], .addTo(map)
 	.bindPopup('We, Team Lhotshampa, participate in the annual inter-Nepalese football tournament hosted at Skoglund Park. We \ currently hold the title of five-times champions.');
 
 const marker2 = L.marker([-43.57817117924751, 172.54656944752773], { icon: cafeIcon }).addTo(map)
